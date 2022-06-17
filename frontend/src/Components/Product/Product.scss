@@ -1,0 +1,69 @@
+@import "../../scss/index.scss";
+
+.tituloPrincipal {
+  text-align: center;
+  border-bottom: 1px solid $rgbaPrincipal;
+  width: 20vmax;
+  font-size: 1.4vmax;
+  font-family: Poppins, sans-serif;
+  margin: 10vmax auto 3vmax;
+  color: $rgbPrincipal;
+}
+
+ul.pagination {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: $white;
+  list-style: none;
+  border: 1px solid $rgbaSecundario;
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.page-link {
+  font: 300 0.7vmax "Roboto";
+  color: $rgbSecundario;
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: $lightRgb;
+
+  .page-link {
+    color: $rgblightSecundario;
+  }
+}
+
+.pageItemActive {
+  background-color: $searchColor;
+}
+
+.pageLinkActive {
+  color: $white;
+}
+
+@media screen and (max-width: 425px) {
+  .tituloPrincipal {
+    margin: 16vmax auto 3vmax;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-item {
+    padding: 1.5vmax 2.5vmax;
+  }
+}

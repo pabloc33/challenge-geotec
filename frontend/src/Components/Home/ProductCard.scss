@@ -1,0 +1,154 @@
+@import "../../scss/index.scss";
+
+.ProductCard {
+  width: 14vmax;
+  height: 22vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: $rgbDarkSecundario;
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+img.ProductImg {
+  width: 14vmax;
+}
+
+.ProductCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+
+  > span {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+}
+
+.productName {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  color: $black;
+  margin-bottom: 0;
+}
+
+.ProductCard {
+  > span {
+    margin: 0.5vmax;
+    color: $tomato;
+    font-family: "Frankin Gothic Medium", "Arrial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px $rgbaCardShadow;
+    transform: translateY(-1vmax);
+  }
+
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: $rgbDarkSecundario;
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .ProductCard > {
+    p {
+      font-size: 1.7vmax;
+    }
+
+    div {
+      margin: 0vmax;
+      display: block;
+    }
+
+    span {
+      font-size: 1.5vmax;
+    }
+
+    div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
+}
+
+img.ProductImg {
+  width: 14vmax;
+  height: 12vmax;
+  object-fit: contain;
+}
+
+.ProductCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+
+  > span {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+}
+
+.productName {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  color: $black;
+  margin-bottom: 0;
+}
+
+.ProductCard {
+  > span {
+    margin: 0.5vmax;
+    color: $tomato;
+    font-family: "Frankin Gothic Medium", "Arrial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px $rgbaCardShadow;
+    transform: translateY(-1vmax);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProductCard > {
+    p {
+      font-size: 1.7vmax;
+    }
+
+    div {
+      margin: 0vmax;
+      display: block;
+    }
+
+    span {
+      font-size: 1.5vmax;
+    }
+
+    div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ProductCard {
+    width: 50vmax;
+    align-items: center;
+  }
+
+  img.ProductImg {
+    width: 23vmax;
+    height: 18vmax;
+  }
+}
